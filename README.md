@@ -25,8 +25,8 @@ Here's a rundown of the pages I'll need to build (roughly in terms of user flow)
 ## Part B: Product Roadmap
 Since building the "reference database" is going to be a little tricky (especially for weird & complicated stuff like procedure codes -- see *big questions*), I should start with checking **medication prices**. 
 + v1: Reductible checks your hospital bills for potential overcharging of administered medication
-+ v2: Reductible checks for medication overcharging *and* mistakes with procedure names / codes. 
-+ v?: Reductible does all above *and* can tell you how your procedure costs compare to market averages (ala TrueCar?)
++ v2: Reductible *also* catches mistakes with procedure names / codes. 
++ v?: Reductible *also* can tell you how your procedure costs compare to market averages (a la TrueCar?)
 
 ## Part C: Big Questions
 + I can build the drug pricing reference database with data from sources like <a href="https://goodrx.com">goodrx.com</a>, but what about procedure codes? Are these even universal across hospitals?
