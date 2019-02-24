@@ -1,6 +1,10 @@
 # reductible
 Entrepreneurship class project idea. Reducing medical bills programmatically by comparing user input to a reference database. The system catches invoice billing errors such as procedure name - code mismatches & overcharging. <a href="https://docs.google.com/presentation/d/1x0Bmk2k9GaQcDBAFeGLsh9ttovyHbH5W0aW-5Ok-aAk/edit?usp=sharing">First Presentation Link (2/20)</a>.
 
+<div style="display: flex; justify-content: center;">
+<img style="padding: 10px;" src="https://imgur.com/RqI9Ynq" width="200px">
+<img style="padding: 10px;" src ="https://imgur.com/ORZweWM" width="200px">
+</div>
 
 # Product Roadmap & Thoughts (2/24)
 Now I should actually consider how to move forward building, determining product positioning, & finally marketing this platform. 
