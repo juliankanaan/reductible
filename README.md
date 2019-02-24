@@ -1,7 +1,5 @@
 # reductible
-Entrepreneurship class project idea. Reducing medical bills programmatically by comparing user input to a reference database. The system catches invoice billing errors such as procedure name - code mismatches & overcharging.  
-
-# First Presentation Link (2/20)
+Entrepreneurship class project idea. Reducing medical bills programmatically by comparing user input to a reference database. The system catches invoice billing errors such as procedure name - code mismatches & overcharging.  First Presentation Link (2/20)
 <a href="https://docs.google.com/presentation/d/1x0Bmk2k9GaQcDBAFeGLsh9ttovyHbH5W0aW-5Ok-aAk/edit?usp=sharing">Link</a>.
 
 # Product Roadmap & Thoughts (2/24)
