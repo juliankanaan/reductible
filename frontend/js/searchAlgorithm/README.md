@@ -1,8 +1,9 @@
 # Search Algorithm 
-
-User query is compared to actual JSON API results. 
+Some explanation of the stuff going on in the AJAX query. 
 
 ## "Did you mean?" functions
+
+User query is compared to actual JSON API results. 
 
 ```
 userQuery = 'head concussion occ';
