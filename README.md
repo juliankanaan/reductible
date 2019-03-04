@@ -1,5 +1,6 @@
-# reductible
-Reducing medical bills programmatically by comparing user input to similar invoices. The system catches billing errors such as procedure name - code mismatches & overcharging. <a href="https://docs.google.com/presentation/d/1x0Bmk2k9GaQcDBAFeGLsh9ttovyHbH5W0aW-5Ok-aAk/edit?usp=sharing">First Presentation Link (2/20)</a>.
+Reducing medical bills programmatically by comparing user input to similar invoices. The system catches billing errors such as procedure name - code mismatches & overcharging. 
+
+<a href="https://docs.google.com/presentation/d/1x0Bmk2k9GaQcDBAFeGLsh9ttovyHbH5W0aW-5Ok-aAk/edit?usp=sharing">Class Presentation Link (2/20)</a>.
 
 <div style="display: flex; justify-content: center;">
 <img style="padding: 20px;" src="https://i.imgur.com/RqI9Ynq.png" width="200">
