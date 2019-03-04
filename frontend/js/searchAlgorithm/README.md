@@ -16,4 +16,8 @@ jsonData  = 'concussion occ w/ mcc';
 
 `merge()` and `join()` puts them together into a fresh new query: `head concussion occ w/ mcc` 
 
+```
+Output: Did you mean "head concussion occ w/ mcc"?
+```
+
 
