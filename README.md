@@ -6,10 +6,10 @@ Reducing medical bills programmatically by comparing user input to similar invoi
 <img style="padding: 20px;" src="https://i.imgur.com/ORZweWM.png" width="200">
 </div>
 
-Highlights: <a href="https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm">Javascript search algorithm</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/frontend/js/scripts.js'>jQuery AJAX database CRUD</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/backend/README.md'>Database Infrastructure</a>
-
 # Where am I now?
 3/4/19: I built most of the user invoice entry, confirmation, view dashboard functions. <a target="_blank" href="https://share.icloud.com/photos/0x--QbyBxBDJvi5NDDX_JdwvQ#14th_St">Demo video.</a> 
+
+Highlights: <a href="https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm">Javascript search algorithm</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/frontend/js/scripts.js'>jQuery AJAX database CRUD</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/backend/README.md'>Database Infrastructure</a>
 
 # Product Roadmap & Thoughts (2/24)
 How to move forward building, determining product positioning, & finally marketing this platform? 
