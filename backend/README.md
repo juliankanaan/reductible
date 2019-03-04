@@ -1,6 +1,6 @@
 Some first-thoughts on the database infrastructure for the tables I'm going to need. 
 
-3/2 update: Because of how inconsistent procudure names are across bills -- I need the user to confirm which items are most like theirs. This necessitates two 
+3/2 update: Because of how inconsistent procudure names are across bills -- I need the user to confirm which items are most like theirs. This necessitates a DB column `confirmed`. 
 
 ## Unconfirmed (raw user input) 
 
