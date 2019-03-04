@@ -6,7 +6,7 @@ Reducing medical bills programmatically by comparing user input to similar invoi
 <img style="padding: 20px;" src="https://i.imgur.com/ORZweWM.png" width="200">
 </div>
 
-Highlights: <a href="https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm">Javascript search algorithm</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/frontend/js/scripts.js'>jQuery AJAX database CRUD</a>
+Highlights: <a href="https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm">Javascript search algorithm</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/frontend/js/scripts.js'>jQuery AJAX database CRUD</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/backend/README.md'>Database Infrastructure</a>
 
 # Product Roadmap & Thoughts (2/24)
 How to move forward building, determining product positioning, & finally marketing this platform? 
