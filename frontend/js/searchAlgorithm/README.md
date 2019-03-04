@@ -2,6 +2,8 @@
 
 User query is compared to actual JSON API results. 
 
+## "Did you mean?" functions
+
 ```
 userQuery = 'head concussion occ';
 jsonData  = 'concussion occ w/ mcc';
@@ -12,3 +14,5 @@ jsonData  = 'concussion occ w/ mcc';
 `differenceBuilder()` function returns the differences between the two arrays.: ie. `["head", "mcc", "w/"]`
 
 `merge()` and `join()` puts them together into a fresh new query: `head concussion occ w/ mcc` 
+
+
