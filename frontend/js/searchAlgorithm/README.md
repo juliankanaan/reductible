@@ -25,4 +25,4 @@ Sometimes billing data looks odd (ie. $1.2M charge for a simple concussion or $0
 
 Let's filter that out. 
 
-`withinOne()` hangs out at the end of `searchResults()`, allowing only data that is *within one standard deviation* of the rest of the population data. Outliers are out, and my sample is a lot cleaner. I should have enough data so population issues shouldn't be a problem.  
+`withinOne()` hangs out at the end of `searchResults()`, allowing only results that are **within one standard deviation** of the rest of the population data. Outliers are out, and my sample is a lot cleaner. I should have enough data so population issues shouldn't be a problem.  
