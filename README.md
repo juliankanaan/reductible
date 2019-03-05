@@ -40,7 +40,4 @@ Since building the "reference database" is going to be a little tricky (especial
 + v2: Reductible *also* catches mistakes with procedure names / codes. 
 + v?: Reductible *also* can tell you how your procedure costs compare to market averages (a la TrueCar?)
 
-## Part C: Big Questions
-+ I can build the drug pricing reference database with data from sources like <a href="https://goodrx.com">goodrx.com</a>, but what about procedure codes? Are these even universal across hospitals?
-
-+ How to build database infrastructure? User_invoice tables with new inserts for each invoice line item? Should consult my CS friends on what's most efficient here. 
+## Part C: Product Marketing
