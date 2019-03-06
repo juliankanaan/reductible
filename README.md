@@ -1,4 +1,4 @@
-Reducing medical bills programmatically by comparing user input to similar invoices. The system catches billing errors such as procedure name - code mismatches & overcharging. 
+Reducing medical bills programmatically by comparing user input to invoice data released by US hospitals. The system catches billing errors such as procedure name - code mismatches & overcharging. 
 
 <a href="https://docs.google.com/presentation/d/1x0Bmk2k9GaQcDBAFeGLsh9ttovyHbH5W0aW-5Ok-aAk/edit?usp=sharing">Class Presentation Link (2/20)</a>.
 
@@ -35,9 +35,13 @@ Here's a rundown of the pages I'll need to build (roughly in terms of user flow)
 + invoice-[1243534] `analysis page for each submission that shows what Reductible found (visible only to right user)`
 
 ## Part B: Product Roadmap
-Since building the "reference database" is going to be a little tricky (especially for weird & complicated stuff like procedure codes -- see *big questions*), I should start with checking **medication prices**. 
+Since doing complicated queries with all this data is hard, I should start with checking **medication prices**. 
 + v1: Reductible checks your hospital bills for potential overcharging of administered medication
 + v2: Reductible *also* catches mistakes with procedure names / codes. 
 + v?: Reductible *also* can tell you how your procedure costs compare to market averages (a la TrueCar?)
 
 ## Part C: Product Marketing
+
++ Who's my customer?
++ What painpoints / hangups would they have about this service? (need customer interviews)
+
