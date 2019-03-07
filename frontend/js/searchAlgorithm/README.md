@@ -1,7 +1,7 @@
 # Search Algorithm 
 Some explanation of the stuff going on in the AJAX query. 
 
-## Refining search results 
+## Refining search results cyclically
 Because invoice descriptions vary so wildy for the same procedure, the input flow asks the user to confirm which procedure most matches their own with a "soft query" - `searchInitial(query, exceptions)` - of only a few possible matches. *See <a href="https://github.com/juliankanaan/reductible/blob/master/backend/README.md">database infrastructure</a> for how confirming affects records.*
 
 If these soft query results don't match, users can retry `searchInitial()`, **using the first batch of results as an array of exceptions** to be passed to the function. 
