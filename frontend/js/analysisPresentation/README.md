@@ -6,7 +6,7 @@ We'll be using <a href="https://www.chartjs.org/">Charts.js</a>, my favorite Jav
 
 Here's v1 output of a histogram (3/18):
 
-<img src="https://i.imgur.com/sU2TCPj.png" width="200px;">
+<img src="https://i.imgur.com/iGhHVXr.png" width="200px;">
 
 Gross UI, but this is meant to show all iterations along development.
 
