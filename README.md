@@ -28,7 +28,7 @@ As much as I'd love to go with a trendy ReactJS single-page-application, I've bu
 I'll need to write all this:
 + User onboarding `create new user on signup`
 + Form handling `user invoice info input into a DB`
-+ Database creation `user_invoices,  medication_pricing_reference, procedure_pricing_reference`
++ Database creation `user_invoices`
 
 ### Frontend stuff
 Here's a rundown of the pages I'll need to build (roughly in terms of user flow):
