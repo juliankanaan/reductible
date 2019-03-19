@@ -14,6 +14,8 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 
 3/18/19: Developed v1 of the <a href='https://github.com/juliankanaan/reductible/tree/master/frontend/js/analysisPresentation'>Analysis feature</a> -- shows a histogram of your item price within market data population.
 
+3/19/19: Wrote markup for <a href='https://github.com/juliankanaan/reductible/tree/master/frontend/views/signup.php'>signup</a> pages. Working on server-side handlers.
+
 Highlights: <a href="https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm">Javascript search algorithm</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/frontend/js/scripts.js'>jQuery AJAX database CRUD</a>, <a href='https://github.com/juliankanaan/reductible/blob/master/backend/README.md'>Database Infrastructure</a>, <a href='https://github.com/juliankanaan/reductible/tree/master/frontend/js/analysisPresentation#getting-clean-data'>"Within 1 sigma" method of refining queries</a>.
 
 # Product Roadmap & Thoughts (2/24)
