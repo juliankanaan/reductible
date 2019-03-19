@@ -1,4 +1,4 @@
-function searchInitial(query){ 
+function searchInitial(query){
 
       String(query); // convert to string
       var url = '#';
@@ -32,18 +32,66 @@ function searchInitial(query){
             }); // end loop
           }); // end outside loop
           newArray = withinOne(pricesArray, procArray); // only give procedures within +- a std deviation
-          
+
 
         }
 
-        
+
 
       });
 
-     return newArray; 
+     return newArray;
 
 
 } // end searchInitial()
+
+function searchAnalysis(query){
+
+      String(query); // convert to string
+      var url = '#';
+      var data = JSON.stringify({search: query, sort: "price", perpage: 100, page: 1, direction: -1});
+      var pricesArray = [];
+      var procArray = [];
+      jQuery.ajax({
+        type: "POST",
+        url: url,
+        headers: { 'Content-Type':'application/json'},
+        dataType: "json",
+        data: data,
+        success: function(json) {
+          // check for success & do something:
+          // alert("You got API data");
+          //$("#similar").fadeIn();
+          //console.log(JSON.stringify(json));
+          jQuery.each(json, function(index, item) { // in the "Price data sets"
+            var prices = item.prices;
+            jQuery.each(prices, function(index, item) { // for each line item
+
+              var itemprice = JSON.stringify(item.price).replace(/\"/g, "");
+              var desc = JSON.stringify(item.description);
+
+
+              pricesArray.push(itemprice);
+              procArray.push(desc);
+
+
+
+            }); // end loop
+          }); // end outside loop
+          newArray = withinOne(pricesArray, procArray); // only give procedures within +- a std deviation
+
+
+        }
+
+
+
+      });
+
+     return newArray;
+
+
+} // end searchAnalysis()
+
 
 function mergeKeyValue(array1, array2){ // only works when both arrays are strings
 

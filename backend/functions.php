@@ -26,16 +26,21 @@ function insertItem(){ // insert line item into _items table
   $procedure = sanitize_text_field( $_REQUEST['procedure'] );
   $charge  = $_REQUEST['charge']; // sanitize somehow
   $nonce = $_REQUEST['nonce'];
-  // build array
-  $data = array(
-    'user_id' => $user_id,
-    'charge' => $charge,
-    'procedure_name'  => $procedure
 
-  );
-  //echo 'received';
+  //echo 'received request';
 
-  if ( wp_verify_nonce($nonce, 'insert')) {
+  if ( wp_verify_nonce($nonce, 'insert')) { // good request, passes security check
+
+      $post_id = createPage($user_id, $id); // quickly create a dedicated page URL for it
+
+      // build array
+      $data = array(
+        'user_id' => $user_id,
+        'charge' => $charge,
+        'procedure_name'  => $procedure,
+        'post_id' => $post_id // for URL ending
+
+      );
 
       global $wpdb;
 
@@ -46,11 +51,16 @@ function insertItem(){ // insert line item into _items table
       // check for success
       if ( $insert_id ) { // function returns True or False depending on success
 
+        // createPage($user_id, )
+
         $result['type'] = 'success';
         $result['charge'] = $charge;
         $result['procedure'] = $procedure;
+        $result['post_id'] = $post_id; // url ending
         $result = json_encode($result);
         echo $result;
+
+
 
       } else {
         $result['type'] = 'failure';
@@ -114,5 +124,36 @@ function getItems($user_id){ // get all line items for current user
   }
 
 } // usage: foreach (getItems($user_id) as $item ) { echo $item->procedure; }
+
+function getDetails($post_id){ // array of invoice details given a post_id
+  global $wpdb;
+  $sqlquery = "SELECT procedure_name, charge, confirmed FROM wp_items_ WHERE post_id = $post_id";
+  $data = $wpdb->get_results($sqlquery); // bundled up
+
+  if ($data){
+    return $data;
+  } else {
+    return false; // for usage as "if (getDetails())..."
+  }
+}
+
+/*UNTESTED CODE
+ creates new pages (wp_posts) for each new
+*/
+function createPage($user_id, $id){
+
+  $data = array(
+            'post_title' => $title,
+            'post_content' => 'whispers',
+            'page_template' => 'Analysis' // make sure this is right
+
+          );
+
+
+$post_id = wp_insert_post($data);
+
+return $post_id; // wp_insert_post() returns zero on failure
+}
+
 
 ?>
