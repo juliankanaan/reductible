@@ -8,7 +8,7 @@ Part 1: Search functions
 function searchInitial(query){ // primary search. return ~10 *descriptions* within one std dev
 
       String(query); // convert to string
-      var url = 'https://hospital-price.herokuapp.com/api/prices';
+      var url = '#';
       var data = JSON.stringify({search: query, sort: "price", perpage: 20, page: 1, direction: -1});
       var pricesArray = [];
       var procArray = [];
@@ -82,7 +82,7 @@ function withinOne(pricesArray, procedureArray){ // return new procedure array w
   var std = stdDev(pricesArray);
   var avg = mean(pricesArray);
   var two = std; // two stdv
-  console.log(two);
+  //console.log(two);
   var goodArray = [];
   jQuery.each(pricesArray, function(index, item) { // loop prices, pick out
 
@@ -213,12 +213,44 @@ function updateDBItem(newVal, old, user){ // confirmed item, update description 
         }
      }
   });
-
-
   }
+function deleteItem(user, post_id, nonce){ // delete invoice item from DB
+  jQuery.ajax({
+     type : "post",
+     dataType : "json",
+     url : myAjax.ajaxurl,
+     data : {action: "deleteItem", "user_id":user, "post_id":post_id, "nonce":nonce},
+     success: function(response) {
+       // check for success & do something:
+        if(response.type == "success") {
+            confirmDelete(); // deleted alert pops up
+
+        }
+        else {
+           alert("Something failed with the AJAX request");
+        }
+     }
+  });
+}
+function deleteThing(data){
+
+    var user_id = data.getAttribute('data-user');
+    var nonce   = data.getAttribute('data-nonce');
+    var post_id = data.getAttribute('data-post');
+
+    //deleteItem(user_id, post_id, nonce);
 
 
-  function storeItemDone(){ // AJAX call to insertItem(), no more entries
+}
+function confirmDelete(data){
+  jQuery(data).closest("tr").fadeOut(); // hide parent DOM object
+  jQuery("#deleteConfirm").show().delay(2000); // show banner
+  jQuery("#deleteConfirm").fadeOut('slow'); // fade it out again
+}
+function editItem(user, post_id){
+  // edit item (need to figure out how to do this )
+}
+function storeItemDone(){ // AJAX call to insertItem(), no more entries
 
   // data we need:
   var user_id = jQuery("#user_id").val();
