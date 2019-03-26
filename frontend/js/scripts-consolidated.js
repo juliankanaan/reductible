@@ -52,6 +52,61 @@ function searchInitial(query){ // primary search. return ~10 *descriptions* with
 
 } // end searchInitial()
 
+function confirmQuery(query){ // populate table of similar procedures (4 results)
+
+  String(query); // convert to string
+  var url = '#';
+  var data = JSON.stringify({search: query, sort: "price", perpage: 5, page: 1, direction: -1});
+
+  jQuery.ajax({
+    type: "POST",
+    url: url,
+    headers: { 'Content-Type':'application/json'},
+    dataType: "json",
+    data: data,
+    success: function(json) {
+      // check for success & do something:
+      // alert("You got API data");
+      $("#similar").fadeIn();
+      console.log(JSON.stringify(json));
+      jQuery.each(json, function(index, item) { // in the "Price data sets"
+        var prices = item.prices;
+        jQuery.each(prices, function(index, item) { // for each line item
+
+          var itemprice = JSON.stringify(item.price);
+          var desc = JSON.stringify(item.description);
+
+
+          $("#result"+index).text(JSON.parse(desc));
+          $("#pick"+index).attr("data-new", JSON.parse(desc));
+
+
+
+        }); // end loop
+      }); // end outside loop
+
+    }
+
+
+  });
+
+} // end confirmQuery()
+
+function populateConfirmTable(descriptions){ // given an array of descriptions, populate table
+
+  // usage: descriptions = searchInitial("hand surgery");
+  //        populateConfirmTable(descriptions);
+
+  $("#similar").fadeIn();
+  $.each(descriptions, function(index, item) {
+    var desc = JSON.stringify(item);
+
+    $("#result"+index).text(JSON.parse(desc));
+    $("#pick"+index).attr("data-new", JSON.parse(desc));
+  });
+
+}
+
 function mean(theArray){
 
 
@@ -339,7 +394,7 @@ function storeItemDone(){ // AJAX call to insertItem(), no more entries
 
 
   });
-  jQuery(".picker").click(function(){
+  jQuery(".picker").click(function(){ // confirm item from list
       var newVal = jQuery(this).attr("data-new");
       var oldVal = jQuery("#gobtn").attr("data-query");
       var user_id = jQuery(this).attr("data-user");
