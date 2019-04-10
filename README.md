@@ -8,7 +8,7 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 </div>
 
 # Where am I now?
-3/4/19: I built most of the user invoice entry, confirmation, view dashboard functions. <a target="" href="https://share.icloud.com/photos/0x--QbyBxBDJvi5NDDX_JdwvQ#14th_St">Demo video.</a>
+3/4/19: I built most of the user invoice entry, confirmation, view dashboard functions. <a target="" href="https://www.icloud.com/photos/#0EaFMbppcrPDugoevnTRp43Zw">Demo video.</a>
 
 3/5/19: Built about half of the <a href='https://github.com/juliankanaan/reductible/tree/master/frontend/js/searchAlgorithm'>search algorithm</a> -- including "Did you mean xyz?" functions and filtering for price outliers.
 
