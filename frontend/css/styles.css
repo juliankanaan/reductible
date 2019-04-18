@@ -2,3 +2,9 @@
   padding-top: 30px;
   text-align: center;
 }
+#difference {
+  color: #d01040;
+}
+.chart-container {
+  min-height: 300px;
+}

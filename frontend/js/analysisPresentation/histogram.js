@@ -1,25 +1,36 @@
 
 
-var p = ["288443.07", "288443.07", "143853.65", "143853.65", "143853.65", "143853.65", "143853.65", "141419.315", "116867.4", "116867.4", "116008.37", "111561.38071989552", "105511.7", "105511.7", "105511.7", "105511.7", "105511.7", "103748.31", "103748.31", "101333"];
+//var p = ["288443.07", "288443.07", "143853.65", "143853.65", "143853.65", "143853.65", "143853.65", "141419.315", "116867.4", "116867.4", "116008.37", "111561.38071989552", "105511.7", "105511.7", "105511.7", "105511.7", "105511.7", "103748.31", "103748.31", "101333"];
 
-var someData = segementer(p);
+$(document).ready(function(){
+	var p = searchAnalysis(query);
+
+	var someData = segementer(p);
+
+	createLineChart(someData);
+
+	var arrLength = p.length;
+	$("#pop-size").text(arrLength); // shows how many results analyzed
+
+});
+
 
 function kF(array){
 
-var newArray = [];
+	var newArray = [];
 
-$.each(array, function(index, value){
+	$.each(array, function(index, value){
 
-	var newNum = kFormatter(value);
-  newArray.push(newNum);
+		var newNum = kFormatter(value);
+	  newArray.push(newNum);
 
-});
+	});
 
 return newArray;
 
 }
 
-createLineChart(someData);
+
 
 function createLineChart(suppliedArray){
 
@@ -98,24 +109,7 @@ function kFormatter(num) {
     return num > 999 ? (num/1000).toFixed(1) + 'k' : num
 }
 
-// histograms require the X axis to be a range of data, and the Y to be
-// # of data points that exist in it
 
-
-// how to segement the data?
-
-function dataBuilder(arr){ // supply histogram array tp
-
-}
-function popuation(segmentArray){ // supplied the array bounds, how many fall into each range?
-
-  // four histogram ranges exist
-
-
-
-
-return popuationArray;
-}
 
 function segementer(array){ // splits array of prices into 8 even segments (for the histogram)
 
@@ -158,6 +152,7 @@ function mean(arr){
   console.log(sum);
   var avg = sum / arr.length;
 
+	$("#avg").text(kFormatter(avg)); // fill in the markup
   return avg;
 }
 

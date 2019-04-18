@@ -26,23 +26,24 @@ As much as I'd love to go with a trendy ReactJS single-page-application, I've bu
 
 ### Backend stuff
 I'll need to write all this:
-+ User onboarding `create new user on signup`
-+ Form handling `user invoice info input into a DB`
-+ Database creation `user_invoices`
++ User onboarding `create new user on signup` (done)
++ Form handling `user invoice info input into a DB` (done)
 
 ### Frontend stuff
 Here's a rundown of the pages I'll need to build (roughly in terms of user flow):
 + index.php `landing page`
-+ login.php `login`
-+ dashboard.php `user's profile, past invoice submissions & analyses`
-+ submit.php `user input from invoices`
++ login.php `login` (done)
++ dashboard.php `user's profile, past invoice submissions & analyses` (done)
++ submit.php `user input from invoices` (done)
 + invoice-[1243534] `analysis page for each submission that shows what Reductible found (visible only to right user)`
 
 ## Part B: Product Roadmap
-Since doing complicated queries with all this data is hard, I should start with checking **medication prices**.
-+ v1: Reductible checks your hospital bills for potential overcharging of administered medication
-+ v2: Reductible *also* catches mistakes with procedure names / codes.
-+ v?: Reductible *also* can tell you how your procedure costs compare to market averages (a la TrueCar?)
+Providing a niche need and slowly working outwards in service scope is the lean startup recipe.
+
+Version 1: Platform allows for basic analysis of each line item
+Version 2: Provision of downloadable bundles of each analysis item into a single PDF
+Version 3: Platform becomes mobile app-based
+Version 4: Platform allows for easy scanning & upload of invoices via phone camera
 
 ## Part C: Product Marketing
 
