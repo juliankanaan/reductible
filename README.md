@@ -22,6 +22,8 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 User invoice entry, confirmation, view dashboard functions. <a target="" href="https://www.icloud.com/photos/#0EaFMbppcrPDugoevnTRp43Zw">Demo video.</a>
 
 # Part B: Marketing Strategy 
+I'd like to hit the uninsured / underinsured visitors to US hospitals (a $19.1B section of hospital visits). US Census data tells us who is likely to be underinsured. 
+
 <div style="display: flex; justify-content: center;">
   <img style="padding: 20px;" src="https://i.imgur.com/pDJqrVD.png" width="700">
 </div>
