@@ -2,10 +2,10 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 
 <a href="https://github.com/juliankanaan/reductible/blob/master/Reductible_Deck.pdf">Presentation Link (5/9)</a>.
 
-
+<div style="display: flex; justify-content: space-between;">
 <img style="float: left;" src="https://i.imgur.com/GKLDAL4.png" width="400">
 <img style="float: right" src="https://i.imgur.com/iwjyN7E.png" width="400">
-
+</div>
 
 
 # Part A: Feature set / Product Development
