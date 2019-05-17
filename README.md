@@ -2,10 +2,11 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 
 <a href="https://github.com/juliankanaan/reductible/blob/master/Reductible_Deck.pdf">Presentation Link (5/9)</a>.
 
-<div style="display: flex; justify-content: space-between;">
+
 <img style="float: left;" src="https://i.imgur.com/GKLDAL4.png" width="400">
-<img style="float: right" src="https://i.imgur.com/hgoXnsI.png" width="400">
-</div>
+<img style="float: right" src="https://i.imgur.com/iwjyN7E.png" width="400">
+
+
 
 # Part A: Feature set / Product Development
 
@@ -20,6 +21,8 @@ Reducing medical bills programmatically by comparing user input to invoice data 
 
 
 User invoice entry, confirmation, view dashboard functions. <a target="" href="https://www.icloud.com/photos/#0EaFMbppcrPDugoevnTRp43Zw">Demo video.</a>
+
+<img style="" src="https://i.imgur.com/rczyzHS.png" width="400">
 
 # Part B: Marketing Strategy 
 I'd like to target **uninsured / underinsured visitors** to US hospitals (a $19.1B segment of hospital visits). US Census data tells us who is likely to be underinsured. 
